@@ -1,0 +1,8 @@
+body{
+  background-image: url("/World.png");
+  background-size: cover;
+}
+
+li{
+  color: white;
+}
