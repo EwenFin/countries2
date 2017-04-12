@@ -45,6 +45,10 @@ var populateList = function (country) {
 
     var countryData = JSON.stringify(country)
     localStorage.setItem("country", countryData)
+<<<<<<< HEAD
+=======
+
+>>>>>>> 38f6b1e0b888ab15e48cd76a0f838296b4cb4461
 
     var ul = document.querySelector("#details");
 
@@ -56,7 +60,7 @@ var populateList = function (country) {
     li1.innerText = "Name: " +country.name;
     li2.innerText = "Population: " +country.population;
     li3.innerText = "Capital: " + country.capital;
-    flag.width = 200;
+    flag.width = 300;
     flag.src = country.flag;
 
     while(ul.hasChildNodes()){
