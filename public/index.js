@@ -18,6 +18,7 @@ var app = function(){
     populateList(country)
   })
   makeRequest( url , requestComplete );
+
 }
 
 var requestComplete = function () {
@@ -44,7 +45,10 @@ var populateList = function (country) {
 
     var countryData = JSON.stringify(country)
     localStorage.setItem("country", countryData)
+<<<<<<< HEAD
+=======
 
+>>>>>>> 38f6b1e0b888ab15e48cd76a0f838296b4cb4461
 
     var ul = document.querySelector("#details");
 
@@ -67,6 +71,12 @@ var populateList = function (country) {
     ul.appendChild(li1);
     ul.appendChild(li2);
     ul.appendChild(li3);
+    var latitude = country.latlng[0]
+    var longitude = country.latlng[1]
+    var center = {lat: latitude , lng: longitude}
+    var container = document.querySelector("#main-map");
+    var mainMap = new MapWrapper(container, center, 5);
+    var button = document.querySelector('button')
   }
 
 
