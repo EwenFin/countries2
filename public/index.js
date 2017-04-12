@@ -42,8 +42,11 @@ var populateDropDown = function ( countries ) {
 
 var populateList = function (country) {
 
-    var ul = document.querySelector("#details");
+    var countryData = JSON.stringify(country)
+    localStorage.setItem("country", countryData)
     
+
+    var ul = document.querySelector("#details");
 
     var li1 = document.createElement("li");
     var li2 = document.createElement("li");
@@ -53,11 +56,11 @@ var populateList = function (country) {
     li1.innerText = "Name: " +country.name;
     li2.innerText = "Population: " +country.population;
     li3.innerText = "Capital: " + country.capital;
-    flag.width = 100;
+    flag.width = 200;
     flag.src = country.flag;
 
     while(ul.hasChildNodes()){
-      ul.removeChild(ul.firstChild)
+      ul.removeChild(ul.firstChild);
     }
 
     ul.appendChild(flag);
