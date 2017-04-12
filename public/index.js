@@ -43,9 +43,7 @@ var populateDropDown = function ( countries ) {
 var populateList = function (country) {
 
     var ul = document.querySelector("#details");
-    ul.removeChild()
-    ul.removeChild()
-    ul.removeChild()
+    
 
     var li1 = document.createElement("li");
     var li2 = document.createElement("li");
@@ -57,6 +55,11 @@ var populateList = function (country) {
     li3.innerText = "Capital: " + country.capital;
     flag.width = 100;
     flag.src = country.flag;
+
+    while(ul.hasChildNodes()){
+      ul.removeChild(ul.firstChild)
+    }
+
     ul.appendChild(flag);
     ul.appendChild(li1);
     ul.appendChild(li2);
