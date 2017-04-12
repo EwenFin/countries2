@@ -1,9 +1,8 @@
 
 #main-map{
-  height: 300px;
-  width: 300px;
-  border: 1px solid black;
-
+  height: 305px;
+  width: 305px;
+  border: 2px solid grey;
 }
 
 body{
@@ -12,8 +11,15 @@ body{
 }
 
 li{
-  color: white;
+  color: black;
   font-family: sans-serif;
-  font-size: 25px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
+#box{
+  width: 305px;
+  margin: auto;
+  padding-top: 10%;
+  align-content: center;
+}
