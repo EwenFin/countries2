@@ -1,0 +1,10 @@
+body{
+  background-image: url("/World.png");
+  background-size: cover;
+}
+
+li{
+  color: white;
+  font-family: sans-serif;
+  font-size: 25px;
+}
